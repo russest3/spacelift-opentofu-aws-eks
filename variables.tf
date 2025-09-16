@@ -10,6 +10,12 @@ variable "cluster_name" {
   default     = "eks-cluster"
 }
 
+variable "kubernetes_version" {
+  description = "Kubernetes Version"
+  type = string
+  default = "1.33"
+}
+
 variable "vpc_cidr" {
   description = "CIDR for the VPC"
   type        = string
